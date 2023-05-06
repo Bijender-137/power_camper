@@ -1,38 +1,195 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Comic Gecko;
+  src: url("./assets/fonts/comic_gecko/Comic\ Gecko\ Pro.otf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul li a {
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+  box-sizing: border-box !important;
+  text-decoration: none !important;
+  list-style-type: none !important;
+  padding: 0;
+  margin: 0;
+}
+
+.ff_comic {
+  font-family: Comic Gecko;
+}
+
+.opacity {
+  opacity: 0.7;
+}
+
+.ff_Calibri {
+  font-family: Calibri;
+}
+
+:root {
+  --fs-xsm: 16px;
+  --fs-sm: 36px;
+}
+
+.fs_xsm {
+  font-size: var(--fs-xsm);
+}
+
+.fs_sm {
+  font-size: var(--fs-sm);
+}
+
+.bg_nav {
+  background: #025928;
+}
+
+.btn_sign_in {
+  background: transparent;
+  border: 2px solid #26A646;
+  border-radius: 30px;
+  padding: 10px 28px;
+  transition: 0.6s ease-in-out;
+}
+
+.btn_sign_in:hover {
+  background-color: white;
+  color: #26A646 !important;
+}
+
+.btn_log_in:hover {
+  background-color: white;
+  color: #26A646 !important;
+}
+
+.btn_log_in {
+  background-color: #26A646;
+  border-radius: 30px;
+  padding: 10px 28px;
+  transition: 0.3s ease-in-out;
+  border: 2px solid #26A646 !important;
+}
+
+.text_underline::before {
+  content: "";
+  height: 0px;
+  width: 120%;
+  background-color: #0F6133;
+  border-bottom: 2px solid #26A646;
+  position: absolute;
+  transition: 0.6s ease-in-out;
+  top: -40px;
+  left: -4px;
+  z-index: -1;
+}
+
+.z_index_10 {
+  z-index: 10 !important;
+}
+
+.text_underline:hover::before {
+  height: 80px;
+
+}
+
+.menu_icon {
+  width: 30px;
+  height: 3px;
+  background-color: #26A646;
+  display: block;
+}
+
+.bg_hero_img {
+  background-image: url("./assets/img/png/bg_img_hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg_box_clr {
+  background: linear-gradient(162.43deg, #26A646 0.23%, #025928 22.1%, #025928 76.31%, #26A646 103.78%), #025928;
+  box-shadow: 0px 20px 80px rgba(16, 18, 17, 0.01);
+  border-radius: 8px;
+}
+
+.border_2_bg {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18.5px);
+  border-radius: 8px;
+}
+
+.header_container {
+  max-width: 584px !important;
+  margin: 0 auto !important;
+  padding: 0 12px !important;
+}
+
+.white_circel {
+  height: 88px;
+  width: 88px;
+  border: 3px solid white;
+  border-radius: 50%;
+  transition: 0.6s ease-in-out;
+}
+
+.white_circel:hover {
+  background-color: #26A646;
+}
+
+.cross_icon {
+  right: 0;
+  top: 50%;
+}
+
+.left_dots {
+  left: -100px;
+  bottom: -50px;
+}
+
+.Ryt_dots {
+  right: -100px;
+  top: 20px;
+}
+
+@media (max-width:576px) {
+  .nav_logo_w {
+    max-width: 60px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:768px) {
+  .navOpen {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    background: linear-gradient(162.43deg, #26A646 0.23%, #025928 22.1%, #025928 76.31%, #26A646 103.78%), #025928;
+    transition: 0.5s ease-in-out;
+    height: 100vh;
+    width: 100%;
+    z-index: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navClose {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(162.43deg, #26A646 0.23%, #025928 22.1%, #025928 76.31%, #26A646 103.78%), #025928;
+    transition: 0.5s ease-in-out;
+    height: 100vh;
+    width: 100%;
+    z-index: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text_underline::before {
+    position: unset;
   }
 }
