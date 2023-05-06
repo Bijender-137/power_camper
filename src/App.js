@@ -1,9 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import MyNav from './components/MyNav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import HeroSection from './components/HeroSection';
+
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <MyNav />
         <HeroSection/>
       </div>
+     
     </>
   );
 }

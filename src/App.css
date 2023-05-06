@@ -82,6 +82,9 @@ ul li a {
   left: -4px;
   z-index: -1;
 }
+.loader_bg_clr{
+  background-color: #0F6133;
+}
 
 .z_index_10 {
   z-index: 10 !important;
@@ -161,7 +164,7 @@ ul li a {
   }
 }
 
-@media (max-width:768px) {
+@media (max-width:767.98gitpx) {
   .navOpen {
     position: fixed;
     top: 0;
