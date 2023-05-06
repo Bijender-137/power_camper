@@ -82,7 +82,8 @@ ul li a {
   left: -4px;
   z-index: -1;
 }
-.loader_bg_clr{
+
+.loader_bg_clr {
   background-color: #0F6133;
 }
 
@@ -154,7 +155,8 @@ ul li a {
   right: -100px;
   top: 20px;
 }
-.text:hover .clr{
+
+.text:hover .clr {
   opacity: 1;
 }
 
@@ -164,7 +166,7 @@ ul li a {
   }
 }
 
-@media (max-width:767.98gitpx) {
+@media (max-width:767.98px) {
   .navOpen {
     position: fixed;
     top: 0;
