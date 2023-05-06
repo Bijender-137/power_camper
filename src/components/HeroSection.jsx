@@ -38,32 +38,32 @@ const HeroSection = () => {
 
               <Row className=" ms-sm-4 ps-1 py-5">
                 <Col xs={6} sm={4} className="justify-content-center d-flex">
-                  <div className="white_circel d-flex justify-content-center align- items-center flex-column">
+                  <div className="white_circel d-flex justify-content-center align- items-center flex-column text">
                     <h3 className="ff_Calibri fw-bold text-white fs_xsm mb-0">
                       All year
                     </h3>
-                    <p className="ff_Calibri fw-normal fs_xsm text-white opacity mb-0">
+                    <p className="ff_Calibri fw-normal fs_xsm text-white opacity mb-0 clr">
                       Season
                     </p>
                   </div>
                 </Col>
                 <Col xs={6} sm={4} className="justify-content-center d-flex">
                   {" "}
-                  <div className="white_circel d-flex justify-content-center align- items-center flex-column  ">
+                  <div className="white_circel d-flex justify-content-center align- items-center flex-column text    ">
                     <h3 className="ff_Calibri fw-bold text-white fs_xsm mb-0">
                       174
                     </h3>
-                    <p className="ff_Calibri fw-normal fs_xsm text-white opacity mb-0">
+                    <p className="ff_Calibri fw-normal fs_xsm text-white opacity mb-0 clr">
                       Total Sites
                     </p>
                   </div>
                 </Col>
                 <Col xs={6} sm={4} className="justify-content-center d-flex">
-                  <div className="white_circel d-flex justify-content-center align- items-center flex-column mt-4 mt-sm-0">
+                  <div className="white_circel d-flex justify-content-center align- items-center flex-column mt-4 mt-sm-0 text">
                     <h3 className="ff_Calibri fw-bold text-white fs_xsm mb-0">
                       45
                     </h3>
-                    <p className="ff_Calibri fw-normal fs_xsm text-white opacity mb-0">
+                    <p className="ff_Calibri fw-normal fs_xsm text-white opacity mb-0 clr">
                       Nightly cost
                     </p>
                   </div>
@@ -80,8 +80,8 @@ const HeroSection = () => {
                   </div>
                 </Col>
                 <Col xs={6} sm={4} className="justify-content-center d-flex">
-                  <div className="white_circel d-flex justify-content-center align-items-center position-relative mt-4">
-                    <p className="ff_Calibri fw-normal fs_xsm text-white opacity mb-0">
+                  <div className="white_circel d-flex justify-content-center align-items-center position-relative mt-4 text">
+                    <p className="ff_Calibri fw-normal fs_xsm text-white opacity mb-0 clr">
                       RV/Trailers
                     </p>
                     <img

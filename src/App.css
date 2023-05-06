@@ -151,6 +151,9 @@ ul li a {
   right: -100px;
   top: 20px;
 }
+.text:hover .clr{
+  opacity: 1;
+}
 
 @media (max-width:576px) {
   .nav_logo_w {
