@@ -315,10 +315,16 @@ path {
 }
 
 .rating_box_bg {
-  /* background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05);
   border: 0px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1); */
+  box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(18.5px);
+  position: absolute;
+  z-index: -1;
+  top: 7%;
+  height: 410px;
+  width: 550px;
+  left: 10px;
   border-radius: 0px 8px 8px 0px;
 }
 
@@ -404,6 +410,35 @@ path {
   .overflow_w {
     position: unset !important;
   }
+
+}
+
+@media (max-width:1480px) {
+
+  /* .overflow_w {
+    position: absolute;
+    width: 400px !important;
+    height: 410px;
+    left: 11px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(18.5px);
+    border-radius: 0px 8px 8px 0px;
+  } */
+  .rating_box_bg {
+    background: rgba(255, 255, 255, 0.05);
+    border: 0px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(18.5px);
+    position: absolute;
+    z-index: -1;
+    top: 6%;
+    height: 410px;
+    width: 460px;
+    left: 10px;
+    border-radius: 0px 8px 8px 0px;
+  }
 }
 
 @media (max-width:1925px) {
@@ -430,13 +465,13 @@ path {
 
   .overflow_w {
     position: absolute;
-    width: 520px;
+    width: 430px;
     height: 410px;
     left: 11px;
-    background: rgba(255, 255, 255, 0.05);
+    /* background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(18.5px);
-    border-radius: 0px 8px 8px 0px;
+    border-radius: 0px 8px 8px 0px; */
   }
 }

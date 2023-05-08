@@ -52,8 +52,8 @@ const RatingSummary = () => {
           <Container className="py-5">
             <Row className="py-5">
               <Col xl={4} className="z_index_10">
-                <div className="overflow_w d-none d-xl-block"></div>
-                <div className="rating_box_bg py-4 p-4">
+                <div className=" rating_box_bg  d-none d-xl-block"></div>
+                <div className=" py-4 p-4">
                   <h2 className="ff_comic fw-bold fs-medium text-white">
                     Ratings Summary
                   </h2>
@@ -95,7 +95,7 @@ const RatingSummary = () => {
                   </div>
                 </div>
               </Col>
-              <Col xl={8}>
+              <Col xl={8} className="z_index_10">
                 <Row>
                   <Col
                     md={8}
