@@ -213,9 +213,7 @@ const RatingSummary = () => {
                         <p className=" fw-bold ff_Calibri fs_xsm text-white mb-0 opacity pt-1">
                           21 reviews
                         </p>
-                        {/* <button className="ff_comic fw-bold fw_xsm text-white btn_log_in mt-4">
-                          Member
-                        </button> */}
+                      
                       </div>
                     </div>
                   </Col>
