@@ -13,7 +13,7 @@ const HeroSection = () => {
         <Container className="header_container text-center position-relative pb-5">
           <img className="position-absolute left_dots d-none d-lg-block" src={Dots} alt="Dots" />
           <img className="position-absolute Ryt_dots d-none d-lg-block" src={RytDots} alt="RytDots" />
-          <div className="bg_box_clr py-3 px-3">
+          <div className="bg_box_clr pt-3 pb-5 px-3">
             <div className="border_2_bg py-4">
               <h2 className="ff_comic fw-bold fs_sm text-white ">
                 Platte River Campground
@@ -36,7 +36,7 @@ const HeroSection = () => {
                   </p>
               </a>
 
-              <Row className=" ms-sm-4 ps-1 py-5">
+              <Row className=" ms-sm-4 ps-1 py-5 mb-4">
                 <Col xs={6} sm={4} className="justify-content-center d-flex">
                   <div className="white_circel d-flex justify-content-center align- items-center flex-column text">
                     <h3 className="ff_Calibri fw-bold text-white fs_xsm mb-0">
