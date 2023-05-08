@@ -17,23 +17,23 @@ const RatingSummary = () => {
     <>
       <section className="ratin_sec_bg_clr position-relative mt-5">
         <img
-          className="position-absolute first_dots_group z_index_10"
+          className="position-absolute first_dots_group z_index_10 d-none d-sm-block"
           src={Dots1}
           alt="Dots1"
         />
         <img
-          className="position-absolute second_dots_group z_index_10"
+          className="position-absolute second_dots_group z_index_10 d-none d-sm-block"
           src={Dots2}
           alt="Dots2"
         />
         <img
-          className="position-absolute third_dots_group z_index_10
+          className="position-absolute third_dots_group z_index_10 d-none d-sm-block
           "
           src={Dots3}
           alt="Dots3"
         />
         <img
-          className="position-absolute fourth_dots_group z_index_10
+          className="position-absolute fourth_dots_group z_index_10 d-none d-sm-block
           "
           src={Dots4}
           alt="Dots4"

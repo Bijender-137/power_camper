@@ -320,7 +320,7 @@ path {
   box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1); */
   backdrop-filter: blur(18.5px);
   border-radius: 0px 8px 8px 0px;
-}  
+}
 
 @media (max-width:576px) {
   .nav_logo_w {
@@ -393,6 +393,10 @@ path {
     top: -50px !important;
   }
 
+  .main_shadow_img_bottom {
+    bottom: 0px !important;
+  }
+
   .min_vh_100_xl {
     min-height: unset !important;
   }
@@ -412,7 +416,8 @@ path {
   }
 
   .main_shadow_img_bottom {
-    bottom: -65px;
+    bottom: 0px;
+    transform: translateY(-15px);
   }
 
   .min_vh_100_xl {
