@@ -15,7 +15,7 @@ import Dots4 from "../assets/img/png/dots_4th_bottom.png";
 const RatingSummary = () => {
   return (
     <>
-      <section className="ratin_sec_bg_clr position-relative mt-5">
+      <section className="ratin_sec_bg_clr position-relative mt-sm-5">
         <img
           className="position-absolute first_dots_group z_index_10 d-none d-sm-block"
           src={Dots1}
@@ -51,9 +51,9 @@ const RatingSummary = () => {
         <div>
           <Container className="py-5">
             <Row className="py-5">
-              <Col xl={4} className="z_index_10">
-                <div className=" rating_box_bg  d-none d-xl-block"></div>
-                <div className=" py-4 p-4">
+              <Col lg={4} className="z_index_10 position-relative">
+                <div className=" rating_box_bg d-none d-lg-flex "></div>
+                <div className=" py-4 p-4 rating_box1">
                   <h2 className="ff_comic fw-bold fs-medium text-white">
                     Ratings Summary
                   </h2>
@@ -95,7 +95,7 @@ const RatingSummary = () => {
                   </div>
                 </div>
               </Col>
-              <Col xl={8} className="z_index_10">
+              <Col lg={8} className="z_index_10">
                 <Row>
                   <Col
                     md={8}

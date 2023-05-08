@@ -250,16 +250,6 @@ ul li a {
 .large_box_bg_clr {
   background-color: #00622B;
 }
-
-/* .top_shadow_img {
-  top: 0px;
-} */
-
-.bottom_shadow_img {
-  bottom: 15px !important;
-  transform: translateY(30px);
-}
-
 .btn_choose {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -321,22 +311,125 @@ path {
   backdrop-filter: blur(18.5px);
   position: absolute;
   z-index: -1;
-  top: 7%;
+  top: 0;
   height: 410px;
-  width: 550px;
-  left: 10px;
+  width: 460px;
+  left: 0px;
   border-radius: 0px 8px 8px 0px;
+  transform: translateX(-12%);
 }
 
-@media (max-width:576px) {
-  .nav_logo_w {
-    max-width: 60px;
+
+
+@media (max-width:1925px) {
+  .top_shadow_img {
+    top: -30px;
+  }
+  .bottom_shadow_img {
+    bottom: -30px ;
   }
 
-  :root {
-    --fs-xsm: 16px;
-    --fs-sm: 20px;
-    --fs-medium: 20px;
+  .main_shadow_img_top {
+    top: -60px;
+  }
+
+  .main_shadow_img_bottom {
+    bottom: 0px;
+    transform: translateY(-15px);
+  }
+
+  .min_vh_100_xl {
+    min-height: 100vh;
+  }
+
+  .mt_100 {
+    margin-top: 100px;
+  }
+
+  .main_shadow_img_bottom {
+    bottom: -80px;
+  }
+}
+
+@media (max-width:1400px) {
+  .rating_box_bg {
+    background: rgba(255, 255, 255, 0.05);
+    border: 0px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(18.5px);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 410px;
+    width: 440px;
+    left: 0px;
+    border-radius: 0px 8px 8px 0px;
+    transform: translateX(-20%);
+  }
+}
+
+@media (max-width:1200px) {
+  .top_shadow_img {
+    top: -10px !important;
+  }
+  .bottom_shadow_img {
+    bottom: -15px ;
+  }
+  .rating_box_bg {
+    background: rgba(255, 255, 255, 0.05);
+    border: 0px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(18.5px);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 430px;
+    width: 380px;
+    left: 10%;
+    border-radius: 0px 8px 8px 0px;
+    transform: translateX(-25%);
+  }
+
+  .main_shadow_img_top {
+    top: -50px !important;
+  }
+
+  .main_shadow_img_bottom {
+    bottom: 0px !important;
+  }
+
+  .min_vh_100_xl {
+    min-height: unset !important;
+  }
+
+  .overflow_w {
+    position: unset !important;
+  }
+
+  .main_shadow_img_bottom {
+    bottom: -60px !important;
+  }
+
+}
+
+@media (max-width:991.98px) {
+  .top_shadow_img {
+    top: 10px !important;
+  }
+
+  .main_shadow_img_top {
+    top: -25px !important;
+  }
+
+  .mt_100 {
+    margin-top: 0px !important;
+  }
+
+  .rating_box1 {
+    background: rgba(255, 255, 255, 0.05);
+    border: 0px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(18.5px);
   }
 }
 
@@ -376,86 +469,14 @@ path {
   }
 }
 
-@media (max-width:991.98px) {
-  .top_shadow_img {
-    top: 10px !important;
+@media (max-width:576px) {
+  .nav_logo_w {
+    max-width: 60px;
   }
 
-  .main_shadow_img_top {
-    top: -25px !important;
-  }
-
-  .mt_100 {
-    margin-top: 0px !important;
-  }
-}
-
-@media (max-width:1200px) {
-  .top_shadow_img {
-    top: -10px !important;
-  }
-
-  .main_shadow_img_top {
-    top: -50px !important;
-  }
-
-  .main_shadow_img_bottom {
-    bottom: 0px !important;
-  }
-
-  .min_vh_100_xl {
-    min-height: unset !important;
-  }
-
-  .overflow_w {
-    position: unset !important;
-  }
-
-  .main_shadow_img_bottom {
-    bottom: -60px !important;
-  }
-
-}
-
-@media (max-width:1480px) {
-  .rating_box_bg {
-    background: rgba(255, 255, 255, 0.05);
-    border: 0px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(18.5px);
-    position: absolute;
-    z-index: -1;
-    top: 6%;
-    height: 410px;
-    width: 460px;
-    left: 10px;
-    border-radius: 0px 8px 8px 0px;
-  }
-}
-
-@media (max-width:1925px) {
-  .top_shadow_img {
-    top: -30px;
-  }
-
-  .main_shadow_img_top {
-    top: -60px;
-  }
-
-  .main_shadow_img_bottom {
-    bottom: 0px;
-    transform: translateY(-15px);
-  }
-
-  .min_vh_100_xl {
-    min-height: 100vh;
-  }
-
-  .mt_100 {
-    margin-top: 100px;
-  }
-
-  .main_shadow_img_bottom {
-    bottom: -80px;
+  :root {
+    --fs-xsm: 16px;
+    --fs-sm: 20px;
+    --fs-medium: 20px;
   }
 }
