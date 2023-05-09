@@ -48,21 +48,24 @@ const Overview = () => {
                 </div>
                 <div className="img_w_445">
                   <div className="mt-3 mt-lg-5 d-flex justify-content-center justify-content-lg-start ">
-                    <img height={315}
+                    <img
+                      height={315}
                       className={
                         first === 0 ? "w-100  d-block  " : "w-100  d-none  "
                       }
                       src={WaterImg}
                       alt="WaterImg"
                     />
-                    <img height={315}
+                    <img
+                      height={315}
                       className={
                         first === 1 ? "w-100 d-block " : "w-100 d-none "
                       }
                       src={WaterImg_2}
                       alt="WaterImg"
                     />
-                    <img height={315}
+                    <img
+                      height={315}
                       className={
                         first === 2 ? "w-100 d-block " : "w-100 d-none "
                       }
@@ -77,7 +80,9 @@ const Overview = () => {
                           setfirst(0);
                         }}
                         width="51"
-                        className={first === 0 ? "scale " : "none "}
+                        className={
+                          first === 0 ? "scale w_32_xsm " : "none  w_32_xsm"
+                        }
                         src={WaterImgShort}
                         alt="WaterImg"
                       />{" "}
@@ -86,7 +91,9 @@ const Overview = () => {
                           setfirst(1);
                         }}
                         width="51"
-                        className={first === 1 ? "scale " : "none "}
+                        className={
+                          first === 1 ? "scale w_32_xsm " : "none  w_32_xsm"
+                        }
                         src={WaterImg_2}
                         alt="WaterImg"
                       />
@@ -95,7 +102,9 @@ const Overview = () => {
                           setfirst(2);
                         }}
                         width="51"
-                        className={first === 2 ? "scale " : "none "}
+                        className={
+                          first === 2 ? "scale w_32_xsm " : "none  w_32_xsm"
+                        }
                         src={WaterImg_3}
                         alt="WaterImg"
                       />
@@ -105,12 +114,12 @@ const Overview = () => {
               </div>
             </Col>
             <Col lg={6} className="mt-5 pt-3">
-              <div className="bg_overview">
-                <p className="fw-bold fs_sm ff_comic text-white pt-5 px-3 px-md-5">
+              <div className="bg_overview py-2">
+                <p className="fw-bold fs_sm ff_comic text-white pt-4 px-3 px-md-5">
                   Platte River Sold Out? We can get you a reservation!
                 </p>
-                <div className="started_box_bg_clr mx-3 my-5 mx-md-5">
-                  <div className="py-5">
+                <div className=" mx-3  mx-md-5 ">
+                  <div className="py-4 started_box_bg_clr my-5">
                     <h2 className="fw-bold ff_comic fs_medium text-white text-center">
                       GET STARTED HERE
                     </h2>
@@ -199,79 +208,83 @@ const Overview = () => {
                           </h2>
                         </div>
                       </Col>
-                      <Col sm={5}>
-                        <div>
-                          <form action="/action_page.php">
-                            <label for="cars"></label>
-                            <select
-                              className="w-100 selector_bg_clr text-white arrow"
-                              name="cars"
-                              id="cars"
-                            >
-                              <option
-                                className="bg-success fw-normal ff_Calibri fs_xsm"
-                                value="volvo"
-                              >
-                                RV
-                              </option>
-                              <option
-                                className="bg-success fw-normal ff_Calibri fs_xsm"
-                                value="saab"
-                              >
-                                assistant
-                              </option>
-                              <option
-                                className="bg-success fw-normal ff_Calibri fs_xsm"
-                                value="opel"
-                              >
-                                manager
-                              </option>
-                              <option
-                                className="bg-success fw-normal ff_Calibri fs_xsm"
-                                value="audi"
-                              >
-                                owner
-                              </option>
-                            </select>
-                          </form>
-                        </div>
-                      </Col>
-                      <Col sm={5}>
-                        <div className="mt-3 mt-sm-0">
-                          <form action="/action_page.php">
-                            <label for="cars"></label>
-                            <select
-                              className="w-100 selector_bg_clr text-white arrow"
-                              name="cars"
-                              id="cars"
-                            >
-                              <option
-                                className="bg-success fw-normal ff_Calibri fs_xsm"
-                                value="volvo"
-                              >
-                                10 ft.
-                              </option>
-                              <option
-                                className="bg-success fw-normal ff_Calibri fs_xsm"
-                                value="saab"
-                              >
-                                12 ft.
-                              </option>
-                              <option
-                                className="bg-success fw-normal ff_Calibri fs_xsm"
-                                value="opel"
-                              >
-                                15 ft.
-                              </option>
-                              <option
-                                className="bg-success fw-normal ff_Calibri fs_xsm"
-                                value="audi"
-                              >
-                                20 ft.
-                              </option>
-                            </select>
-                          </form>
-                        </div>
+                      <Col sm={9}>
+                        <Row>
+                          <Col sm={6}>
+                            <div>
+                              <form action="/action_page.php">
+                                <label for="cars"></label>
+                                <select
+                                  className="w-100 selector_bg_clr text-white arrow"
+                                  name="cars"
+                                  id="cars"
+                                >
+                                  <option
+                                    className="bg-success fw-normal ff_Calibri fs_xsm"
+                                    value="volvo"
+                                  >
+                                    RV
+                                  </option>
+                                  <option
+                                    className="bg-success fw-normal ff_Calibri fs_xsm"
+                                    value="saab"
+                                  >
+                                    assistant
+                                  </option>
+                                  <option
+                                    className="bg-success fw-normal ff_Calibri fs_xsm"
+                                    value="opel"
+                                  >
+                                    manager
+                                  </option>
+                                  <option
+                                    className="bg-success fw-normal ff_Calibri fs_xsm"
+                                    value="audi"
+                                  >
+                                    owner
+                                  </option>
+                                </select>
+                              </form>
+                            </div>
+                          </Col>
+                          <Col sm={6}>
+                            <div className="mt-3 mt-sm-0">
+                              <form action="/action_page.php">
+                                <label for="cars"></label>
+                                <select
+                                  className="w-100 selector_bg_clr text-white arrow"
+                                  name="cars"
+                                  id="cars"
+                                >
+                                  <option
+                                    className="bg-success fw-normal ff_Calibri fs_xsm"
+                                    value="volvo"
+                                  >
+                                    10 ft.
+                                  </option>
+                                  <option
+                                    className="bg-success fw-normal ff_Calibri fs_xsm"
+                                    value="saab"
+                                  >
+                                    12 ft.
+                                  </option>
+                                  <option
+                                    className="bg-success fw-normal ff_Calibri fs_xsm"
+                                    value="opel"
+                                  >
+                                    15 ft.
+                                  </option>
+                                  <option
+                                    className="bg-success fw-normal ff_Calibri fs_xsm"
+                                    value="audi"
+                                  >
+                                    20 ft.
+                                  </option>
+                                </select>
+                              </form>
+                            </div>
+                          </Col>
+                        </Row>
                       </Col>
                     </Row>
                     <Row className="mx-2 mx-sm-4 mt-3 pt-2">
@@ -321,14 +334,14 @@ const Overview = () => {
                       </Col>
                     </Row>
                     <Row className="mx-sm-4 mx-2 mt-3 pt-2">
-                      <Col sm={4}>
+                      <Col sm={4} lg={12} xl={4}>
                         <div>
                           <h2 className="fw-bold ff_Calibri fs_xsm text-white mt-2">
                             Check in Date:
                           </h2>
                         </div>
                       </Col>
-                      <Col sm={8}>
+                      <Col sm={8} lg={12} xl={8}>
                         <div>
                           <form action="/action_page.php">
                             <label for="cars"></label>
@@ -367,14 +380,14 @@ const Overview = () => {
                       </Col>
                     </Row>
                     <Row className="mx-sm-4 mx-2 mt-3 pt-2">
-                      <Col sm={4}>
+                      <Col sm={4} lg={12} xl={4}>
                         <div>
                           <h2 className="fw-bold ff_Calibri fs_xsm text-white mt-2">
                             Check out Date:
                           </h2>
                         </div>
                       </Col>
-                      <Col sm={8}>
+                      <Col sm={8} lg={12} xl={8}>
                         <div>
                           <form action="/action_page.php">
                             <label for="cars"></label>

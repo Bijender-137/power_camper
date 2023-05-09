@@ -409,6 +409,7 @@ select.arrow {
   backdrop-filter: blur(16.0214px);
   border-radius: 6.92815px;
   max-width: 270px;
+  margin: 0 auto;
 }
 
 @media (max-width:1925px) {
@@ -569,6 +570,10 @@ select.arrow {
 @media (max-width:576px) {
   .nav_logo_w {
     max-width: 60px;
+  }
+
+  .w_32_xsm {
+    width: 32px;
   }
 
   :root {
