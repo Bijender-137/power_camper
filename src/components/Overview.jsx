@@ -12,7 +12,7 @@ const Overview = () => {
         <Container className="py-5 mt-sm-5">
           <Row>
             <Col lg={6}>
-              <div className="pt-5 mt-2">
+              <div className="pt-sm-5 mt-2">
                 <h1 className="fw_xsm ff_comic fw-bold text-black">Overview</h1>
                 <div className="ms-4 ps-2">
                   <p className="fw-normal fs_xsm ff_Calibri opacity text-black mb-0 black_circel position-relative">
