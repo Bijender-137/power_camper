@@ -341,7 +341,7 @@ path {
 .bg_overview {
   background: linear-gradient(158.49deg, #26A646 0.17%, #025928 20.08%, #025928 69.42%, #26A646 98.08%), #025928;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+
 }
 
 .started_box_bg_clr {
@@ -395,10 +395,20 @@ select.arrow {
   bottom: 0px;
   max-width: 150px;
 }
+
 .over_dots_right {
   right: -60px;
   top: 150px;
   max-width: 150px;
+}
+
+.bg_overview_bottom {
+  background: linear-gradient(158.49deg, #26A646 0.17%, #025928 20.08%, #025928 69.42%, #26A646 98.08%), rgba(0, 0, 0, 0.05);
+  border: 0.866019px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3.46408px 13.8563px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16.0214px);
+  border-radius: 6.92815px;
+  max-width: 270px;
 }
 
 @media (max-width:1925px) {

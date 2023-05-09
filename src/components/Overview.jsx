@@ -48,21 +48,21 @@ const Overview = () => {
                 </div>
                 <div className="img_w_445">
                   <div className="mt-3 mt-lg-5 d-flex justify-content-center justify-content-lg-start ">
-                    <img
+                    <img height={315}
                       className={
                         first === 0 ? "w-100  d-block  " : "w-100  d-none  "
                       }
                       src={WaterImg}
                       alt="WaterImg"
                     />
-                    <img
+                    <img height={315}
                       className={
                         first === 1 ? "w-100 d-block " : "w-100 d-none "
                       }
                       src={WaterImg_2}
                       alt="WaterImg"
                     />
-                    <img
+                    <img height={315}
                       className={
                         first === 2 ? "w-100 d-block " : "w-100 d-none "
                       }
@@ -70,13 +70,14 @@ const Overview = () => {
                       alt="WaterImg"
                     />
                   </div>
-                  <div className="d-flex justify-content-center">
-                    <div className="d-flex mt-5 gap-3 bg_overview p-5 w-50 justify-content-center ">
+                  <div className="d-flex justify-content-center mt-5">
+                    <div className="d-flex  gap-3 bg_overview_bottom p-4 w-50 justify-content-center px-5 py-3">
                       <img
                         onClick={() => {
                           setfirst(0);
                         }}
-                        className={first === 0 ? "scale w-50" : "none w-50"}
+                        width="51"
+                        className={first === 0 ? "scale " : "none "}
                         src={WaterImgShort}
                         alt="WaterImg"
                       />{" "}
@@ -84,7 +85,8 @@ const Overview = () => {
                         onClick={() => {
                           setfirst(1);
                         }}
-                        className={first === 1 ? "scale w-50" : "none w-50"}
+                        width="51"
+                        className={first === 1 ? "scale " : "none "}
                         src={WaterImg_2}
                         alt="WaterImg"
                       />
@@ -92,7 +94,8 @@ const Overview = () => {
                         onClick={() => {
                           setfirst(2);
                         }}
-                        className={first === 2 ? "scale w-50" : "none w-50"}
+                        width="51"
+                        className={first === 2 ? "scale " : "none "}
                         src={WaterImg_3}
                         alt="WaterImg"
                       />
@@ -112,7 +115,7 @@ const Overview = () => {
                       GET STARTED HERE
                     </h2>
                     <Row className="mx-sm-4 mx-1 mt-4">
-                      <Col sm={4}>
+                      <Col sm={3}>
                         <div>
                           <form action="/action_page.php">
                             <label for="cars"></label>
@@ -149,7 +152,7 @@ const Overview = () => {
                           </form>
                         </div>
                       </Col>
-                      <Col sm={8}>
+                      <Col sm={9}>
                         <div className="mt-3 mt-sm-0">
                           <form action="/action_page.php">
                             <label for="cars"></label>
@@ -189,14 +192,14 @@ const Overview = () => {
                     </Row>
                     <Row className="mx-2 mx-sm-4 mt-3 pt-2">
                       {" "}
-                      <Col sm={4}>
+                      <Col sm={3}>
                         <div>
                           <h2 className="fw-bold ff_Calibri fs_xsm text-white mt-2">
                             Site Type:
                           </h2>
                         </div>
                       </Col>
-                      <Col sm={4}>
+                      <Col sm={5}>
                         <div>
                           <form action="/action_page.php">
                             <label for="cars"></label>
@@ -233,7 +236,7 @@ const Overview = () => {
                           </form>
                         </div>
                       </Col>
-                      <Col sm={4}>
+                      <Col sm={5}>
                         <div className="mt-3 mt-sm-0">
                           <form action="/action_page.php">
                             <label for="cars"></label>
@@ -318,14 +321,14 @@ const Overview = () => {
                       </Col>
                     </Row>
                     <Row className="mx-sm-4 mx-2 mt-3 pt-2">
-                      <Col sm={5}>
+                      <Col sm={4}>
                         <div>
                           <h2 className="fw-bold ff_Calibri fs_xsm text-white mt-2">
                             Check in Date:
                           </h2>
                         </div>
                       </Col>
-                      <Col sm={7}>
+                      <Col sm={8}>
                         <div>
                           <form action="/action_page.php">
                             <label for="cars"></label>
@@ -364,14 +367,14 @@ const Overview = () => {
                       </Col>
                     </Row>
                     <Row className="mx-sm-4 mx-2 mt-3 pt-2">
-                      <Col sm={5}>
+                      <Col sm={4}>
                         <div>
                           <h2 className="fw-bold ff_Calibri fs_xsm text-white mt-2">
                             Check out Date:
                           </h2>
                         </div>
                       </Col>
-                      <Col sm={7}>
+                      <Col sm={8}>
                         <div>
                           <form action="/action_page.php">
                             <label for="cars"></label>
