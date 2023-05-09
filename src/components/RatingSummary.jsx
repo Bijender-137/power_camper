@@ -7,7 +7,6 @@ import TopShadow from "../assets/img/png/shadow_img_top.png";
 import TopShadowMain from "../assets/img/png/shadow_main_top.png";
 import BottomShadow from "../assets/img/png/shadow_img_bottom.png";
 import BottomShadow_main from "../assets/img/png/shadow_main_bottom.png";
-import FlowerImg from "../assets/img/svg/flower_img.svg";
 import Dots1 from "../assets/img/png/started_sec_left_dots.png";
 import Dots2 from "../assets/img/png/dots_2nd_right.png";
 import Dots3 from "../assets/img/png/dots_3rd left.png";

@@ -4,11 +4,23 @@ import WaterImg from "../assets/img/png/water_img_1.png";
 import WaterImg_2 from "../assets/img/png/water_img_2.png";
 import WaterImg_3 from "../assets/img/png/water_img_3.png";
 import WaterImgShort from "../assets/img/png/water_img_short_1.png";
+import BottomRight from "../assets/img/png/bottom_ryt.png";
+import BottomLeft from "../assets/img/png/bottom_left.png";
 const Overview = () => {
   const [first, setfirst] = useState(0);
   return (
     <>
-      <section className="pt-md-5">
+      <section className="pt-md-5 position-relative overflow-hidden">
+        <img
+          className="position-absolute over_dots_left z_index_10 d-none d-sm-block"
+          src={BottomLeft}
+          alt="BottomLeft"
+        />
+        <img
+          className="position-absolute over_dots_right z_index_10 d-none d-sm-block"
+          src={BottomRight}
+          alt="BottomRight"
+        />
         <Container className="py-5 mt-sm-5">
           <Row>
             <Col lg={6}>
@@ -37,17 +49,23 @@ const Overview = () => {
                 <div className="img_w_445">
                   <div className="mt-3 mt-lg-5 d-flex justify-content-center justify-content-lg-start ">
                     <img
-                      className={first === 0 ? "w-100  d-block  " : "w-100  d-none  "}
+                      className={
+                        first === 0 ? "w-100  d-block  " : "w-100  d-none  "
+                      }
                       src={WaterImg}
                       alt="WaterImg"
                     />
                     <img
-                      className={first === 1 ? "w-100 d-block " : "w-100 d-none "}
+                      className={
+                        first === 1 ? "w-100 d-block " : "w-100 d-none "
+                      }
                       src={WaterImg_2}
                       alt="WaterImg"
                     />
                     <img
-                      className={first === 2 ? "w-100 d-block " : "w-100 d-none "}
+                      className={
+                        first === 2 ? "w-100 d-block " : "w-100 d-none "
+                      }
                       src={WaterImg_3}
                       alt="WaterImg"
                     />
@@ -378,7 +396,7 @@ const Overview = () => {
                                 className="bg-success fw-normal ff_Calibri fs_xsm"
                                 value="opel"
                               >
-                                 Sunday,May 15/2022
+                                Sunday,May 15/2022
                               </option>
                               <option
                                 className="bg-success fw-normal ff_Calibri fs_xsm"
@@ -392,11 +410,12 @@ const Overview = () => {
                       </Col>
                     </Row>
                     <div className="text-center pt-5">
-                    <button className="btn_log_in fw-bold ff_Calibri fs_xsm text-white">Continue to Step 2</button>
+                      <button className="btn_log_in fw-bold ff_Calibri fs_xsm text-white">
+                        Continue to Step 2
+                      </button>
+                    </div>
                   </div>
                 </div>
-                </div>
-                
               </div>
             </Col>
           </Row>

@@ -390,6 +390,17 @@ select.arrow {
   max-width: 445px;
 }
 
+.over_dots_left {
+  left: -60px;
+  bottom: 0px;
+  max-width: 150px;
+}
+.over_dots_right {
+  right: -60px;
+  top: 150px;
+  max-width: 150px;
+}
+
 @media (max-width:1925px) {
   .top_shadow_img {
     top: -30px;
